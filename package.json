@@ -1,7 +1,7 @@
 {
-  "name": "pf",
-  "version": "1.0.0",
-  "description": "make web game",
+  "name": "poke_sample",
+  "version": "0.0.1",
+  "description": "pokemon Sample community",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
