@@ -1,3 +1,5 @@
+@import './size.scss';
+
 * {
   margin: 0px;
   padding: 0px;
@@ -5,4 +7,62 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-section {
+  width: $max-width;
+  height: 180px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  // <section>
+  >:nth-child(1){
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    // <menu>
+    >:nth-child(1){
+      display: flex;
+      
+      >li{
+        color:white;
+        display: inline-block;
+        margin: 20px;
+      }
+    }
+
+    >:nth-child(2){
+
+    }
+
+  }
+  >h1{
+    color: white;
+    font-size: 48px;
+  }
+}
+
+.main-section{
+  width: 100vw;
+  height: 500px;
+  background-color: grey;
+}
+
+.foot-section {
+  width: $max-width;
+  height: 80px;
+  background-color: black;
 }
