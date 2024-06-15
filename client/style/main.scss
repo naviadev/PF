@@ -21,7 +21,6 @@
 .header-section {
   width: $max-width;
   height: 180px;
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +35,9 @@
     // <menu>
     >:nth-child(1){
       display: flex;
-      
+      background-color: rgb(103, 183, 169);
+      width: 600px;
+      justify-content: center;
       >li{
         color:white;
         display: inline-block;
@@ -50,7 +51,6 @@
 
   }
   >h1{
-    color: white;
     font-size: 48px;
   }
 }
@@ -58,7 +58,7 @@
 .main-section{
   width: $max-width;
   height: 500px;
-  background-color: grey;
+  
 
   >:nth-child(1){
     height: 100%;
@@ -69,8 +69,8 @@
     
     >div {
       width: 350px;
-      background-color: white;
-      border-radius: 20px;
+      background-color: grey;
+      border-radius: 15px;
       height: 100%;
     }
   }
@@ -79,5 +79,4 @@
 .foot-section {
   width: $max-width;
   height: 80px;
-  background-color: black;
 }
