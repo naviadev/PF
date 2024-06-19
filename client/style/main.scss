@@ -21,6 +21,7 @@
   grid-template-areas: "LOGO EMPTY MENU";
   width: 100vw;
   height: 10vh;
+  border-bottom: solid 1px;
   
   > :nth-child(1) {
     grid-area: LOGO;
@@ -57,20 +58,20 @@
 }
 
 .main-section {
-  
   height: 100%;
-  
-  display: grid;
-  grid-template-columns: 5fr 1fr;
-  grid-template-areas: "CONTENT SIDE";
-
+  @include flexRowsCenterMixin;
   >:nth-child(1){
-    grid-area: CONTENT;
-    border: solid 2px;
+    
+    @include flexRowsCenterMixin;
+    
+    gap: 10vw;
+    >.content {
+      width: 300px;
+      height: 400px;
+      border: solid 1px;
+    }
+    
+
   }
   
-  >:nth-child(2){
-    grid-area: SIDE;
-    border: solid 2px;
-  }
 }
