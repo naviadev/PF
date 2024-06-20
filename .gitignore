@@ -1,3 +1,4 @@
 /data_server
 /node_modules
 client/style/*.css
+client/style/*.css.map
